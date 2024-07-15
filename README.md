@@ -7,7 +7,7 @@ Clone the Repository
 bash
 Copy code
 git clone https://github.com/yourusername/seo-analyzer.git
-cd seo-analyzer
+cd Bash-Seo-Analyzer
 Run Setup Script
 
 Execute the setup script (setup.sh) to initialize the environment and dependencies:
