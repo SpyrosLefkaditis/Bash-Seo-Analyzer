@@ -6,7 +6,7 @@ Clone the Repository
 
 bash
 Copy code
-git clone https://github.com/yourusername/seo-analyzer.git
+git clone https://github.com/SpyrosLefkaditis/Bash-Seo-Analyzer.git
 cd Bash-Seo-Analyzer
 Run Setup Script
 
