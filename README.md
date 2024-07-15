@@ -483,7 +483,7 @@ References
  114. https://seotest.me/external-links/
 
 
-Lynx: Required for web scraping. Ensure it is installed using the setup script.
+apt package manager will be required to run setup.sh
 Contributing
 Contributions are welcome! If you have ideas for improvements or new features, feel free to fork the repository and submit pull requests.
 
