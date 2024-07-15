@@ -1,0 +1,27 @@
+#!/bin/bash
+
+# Get the current user
+current_user=$(whoami)
+
+# Prompt the user to enter the site URL
+read -p 'Enter the site URL: ' site_url
+
+# Base URL of the SEO analyzer
+sc_url="https://seotest.me/?results="
+
+# Construct the full SEO analysis URL
+analysis_url="${sc_url}${site_url}"
+
+# Extract the domain name from the site URL
+domain_name=$(echo "$site_url" | sed -E 's|https?://([^/]+).*|\1|')
+
+# Define the output file path
+output_file="/home/${current_user}/Desktop/site_reports/${domain_name}-analysis-report.txt"
+
+# Fetch the analysis results using lynx and save to the output file
+lynx -dump "$analysis_url" > "$output_file"
+
+# Notify the user that the report has been saved
+echo "The SEO analysis report for $site_url has been saved to $output_file"
+
+kate $output_file
